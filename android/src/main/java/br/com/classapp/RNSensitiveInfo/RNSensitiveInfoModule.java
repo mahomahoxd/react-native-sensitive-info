@@ -314,7 +314,7 @@ public class RNSensitiveInfoModule extends ReactContextBaseJavaModule {
                                         public void onAuthenticationFailed() {
                                             super.onAuthenticationFailed();
                                             getReactApplicationContext().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                                                    .emit("FINGERPRINT_AUTHENTICATION_HELP", "Fingerprint not recognized.");
+                                                    .emit("FINGERPRINT_AUTHENTICATION_HELP", "Vingerafdruk is niet herkend.");
                                         }
 
                                         @Override
@@ -366,7 +366,7 @@ public class RNSensitiveInfoModule extends ReactContextBaseJavaModule {
                 pm.reject(e);
             }
         } else {
-            pm.reject("Fingerprint not supported", "Fingerprint not supported");
+            pm.reject("Vingerafdruk is niet ondersteund", "Vingerafdruk is niet ondersteund");
         }
     }
 
@@ -430,7 +430,7 @@ public class RNSensitiveInfoModule extends ReactContextBaseJavaModule {
                                         public void onAuthenticationFailed() {
                                             super.onAuthenticationFailed();
                                             getReactApplicationContext().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                                                    .emit("FINGERPRINT_AUTHENTICATION_HELP", "Fingerprint not recognized.");
+                                                    .emit("FINGERPRINT_AUTHENTICATION_HELP", "Vingerafdruk is niet herkend.");
                                         }
 
                                         @Override
@@ -474,7 +474,7 @@ public class RNSensitiveInfoModule extends ReactContextBaseJavaModule {
                 pm.reject(e);
             }
         } else {
-            pm.reject("Fingerprint not supported", "Fingerprint not supported");
+            pm.reject("Vingerafdruk is niet ondersteund", "Vingerafdruk is niet ondersteund");
         }
     }
 }
